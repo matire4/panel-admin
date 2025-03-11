@@ -9,16 +9,16 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const images = [
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-TJQcJgAF0cJOB7WYZX71ProraWak0w.png",
+    src: "/ALMA_NEGRA.png", // Ruta de la imagen en la carpeta public
+    alt: "Botella y copa de vino Alma Negra",
+  },
+  {
+    src: "/Barricas de vino alma negra.png", // Ruta de la imagen en la carpeta public
     alt: "Barricas de vino Alma Negra",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/D_NQ_NP_989988-MLA81072140409_112024-O-eMyqzD5qIOHfUpiRFTBUU5CsnQQHX7.webp",
+    src: "/D_NQ_NP_989988-MLA81072140409_112024-O.webp", // Ruta de la imagen en la carpeta public
     alt: "Logo Alma Negra",
-  },
-  {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ALMA_NEGRA-4gh1a1ttfX0b2DvscBkqgbjtkaKzyP.png",
-    alt: "Botella y copa de vino Alma Negra",
   },
 ]
 
@@ -45,11 +45,11 @@ export function ImageCarousel() {
               }`}
             >
               <Image
-                src={image.src || "/placeholder.svg"}
+                src={image.src || "/placeholder.svg"} // Se usa la ruta de la imagen desde public
                 alt={image.alt}
                 fill
                 className="object-cover"
-                priority={index === 0}
+                // priority={index === 0}
               />
             </div>
           ))}
@@ -93,4 +93,3 @@ export function ImageCarousel() {
     </Card>
   )
 }
-
