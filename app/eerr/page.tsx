@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ArrowLeft, BarChart3 } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/app/conciliacion/file-processor/ui/button"
 import { Navbar } from "@/components/navbar"
 
 export default function EERRPage() {

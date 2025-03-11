@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Moon, Sun } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/app/conciliacion/file-processor/ui/button"
 
 export function ThemeToggle() {
   const [theme, setTheme] = useState<"light" | "dark">("light")
